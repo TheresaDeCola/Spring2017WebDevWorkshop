@@ -6,9 +6,22 @@
     <body>
         <div id="profile_pic">
             <img src="http://s2.quickmeme.com/img/dd/ddfc4c0884ca04367efa6be8e85d2cd52028906a45ca893ccd6b452b7ebf45b8.jpg"/>
+        
+            <a href="resume.html"> My Awesome Website </a>
         </div>
 
-        
+        <h2>Reasons you should hire me</h2>
+        <ol>
+            <li>
+                <h3> I am a cat </h3>
+            </li>
+            <li>
+                <h4> I have dank memes </h4>
+            </li>
+            <li>
+                <h5> I can code </h5>
+            </li>
+        </ol>
 
         <form id="new_meme_form">
             <div class="row">
@@ -24,7 +37,7 @@
             </div>
         </form>
 
-        <form id="new_video_form">
+        <form id="new_video_form" >
             <div class="row">
                 <label> Video URL </label>
                 <input type="text" id="new_video_url"/>
@@ -37,6 +50,25 @@
                 <input type="button" value="Add Meme" id="new_video_button" />
             </div>
         </form>
+
+        <div id="meme_feed">
+            <h1>MEME FEED</h1>
+            <ul id=memes_and_videos>
+                <li>
+                    <div class="video">
+                        <!-- This is from youtube. Go Share -> Embed, copy and paste the html -->
+                        <iframe width="300" height="200" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                        <div class="caption"> I cans rickrolls you </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="meme">
+                        <img width="300" height="200" src="http://grebelspeaks.weebly.com/uploads/1/1/7/2/11729594/_6704311_orig.jpg"/>
+                        <div ="caption"> I luvs dis meme </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
 
     </body>
 </html>
