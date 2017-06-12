@@ -2,12 +2,16 @@
 <html>
     <head>
         <title> Code Cat Resume </title>
+
+        <!-- this links the resume.json file -->
+        <script type="text/javascript" src="resume.js"></script>
     </head>
+
     <body>
         <div id="profile_pic">
             <img src="http://s2.quickmeme.com/img/dd/ddfc4c0884ca04367efa6be8e85d2cd52028906a45ca893ccd6b452b7ebf45b8.jpg"/>
         
-            <a href="resume.html"> My Awesome Website </a>
+            <a href="welcomepage.html"> My Awesome Website </a>
         </div>
 
         <h2>Reasons you should hire me</h2>
@@ -33,27 +37,13 @@
                 <input type="text" id="new_meme_caption"/>
             </div>
             <div class="row">
-                <input type="button" value="Add Meme" id="new_meme_button" />
+                <input type="button" value="Add Meme" id="new_meme_button" onclick="newMeme();"/>
             </div>
         </form>
 
-        <form id="new_video_form" >
-            <div class="row">
-                <label> Video URL </label>
-                <input type="text" id="new_video_url"/>
-            </div>
-            <div class="row">
-                <label> Video Caption </label>
-                <input type="text" id="new_video_caption"/>
-            </div>
-            <div class="row">
-                <input type="button" value="Add Meme" id="new_video_button" />
-            </div>
-        </form>
-
-        <div id="meme_feed">
+        <div>
             <h1>MEME FEED</h1>
-            <ul id=memes_and_videos>
+            <ul id="meme_feed">
                 <li>
                     <div class="video">
                         <!-- This is from youtube. Go Share -> Embed, copy and paste the html -->
@@ -64,7 +54,7 @@
                 <li>
                     <div class="meme">
                         <img width="300" height="200" src="http://grebelspeaks.weebly.com/uploads/1/1/7/2/11729594/_6704311_orig.jpg"/>
-                        <div ="caption"> I luvs dis meme </div>
+                        <div class="caption"> I luvs dis meme </div>
                     </div>
                 </li>
             </ul>
